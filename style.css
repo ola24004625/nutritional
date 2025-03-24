@@ -292,3 +292,18 @@ textarea
     margin: auto;
 }
 
+.slider {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+}
+
+.show {
+  display: block;
+}
