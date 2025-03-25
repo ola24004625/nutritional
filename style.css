@@ -292,18 +292,30 @@ textarea
     margin: auto;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .slider {
-  width: 100%;
-  max-width: 600px;
-  position: relative;
-  overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
 }
 
 .slide {
-  width: 100%;
-  display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-.show {
-  display: block;
+.slide.active {
+    opacity: 1;
 }
+
